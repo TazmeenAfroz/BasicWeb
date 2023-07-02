@@ -1,0 +1,10 @@
+# BasicWeb
+
+This repository contains basic web development files showcasing HTML, CSS, JavaScript, and jQuery fundamentals. It serves as a starting point for beginners to understand these technologies and build simple web projects.
+
+## Contents
+
+- `index.html`: The main HTML file that serves as the entry point of the web page.
+- `styles.css`: The CSS file containing basic styles for the HTML elements.
+- `script.js`: The JavaScript file with basic functionality and interactivity for the web page.
+- `jquery.min.js`: The jQuery library file, which simplifies HTML document manipulation and event handling.
