@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>jQuery | selectors</title>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      
+    <style>
+        body{
+            background-color: #f4f4f4;
+            color: #520000;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.6em;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+        header{
+            background-color: #520000;
+            color: #f4f4f4;
+            padding: 30px;
+            text-align: center;
+           
+            border-bottom: #f4f4f4 4px solid;
+            margin-bottom: 10px;
+        }
+        #container{
+            width: 90%;
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+           
+        }
+        #cords{
+            background-color: #520000;
+            color: #f4f4f4;
+            padding: 30px;
+            text-align: left;
+           
+            border-bottom: #f4f4f4 4px solid;
+            margin-bottom: 10px;
+        }
+        .myClass
+        {
+            color: #0a0000;
+            background-color: #d894c7;
+            padding: 10px;
+            margin: 10px;
+            border: #f4f4f4 1px solid;
+        }
+    </style>
+       
+    </head>
+    <body>
+        <header>
+            <h1>
+                jQuery 
+            </h1>
+
+        </header>
+        <div id = "container">
+            <h1 id  = "heading1">
+                jQuery Introduction
+
+            </h1>
+            <p class = "para1">
+              
+
+                jQuery is a popular JavaScript library that simplifies HTML document traversal, event handling, and animation. It provides an easy-to-use API for performing various tasks on web pages, such as selecting elements, modifying their content, applying styles, and handling events.
+            </p>
+       
+
+<h2 class ="heading2">
+    jQuery Features
+</h2>
+<p class="para2">
+    jQuery offers a wide range of features that make web development easier and more efficient. Some key features include:
+    
+    <ul class = " list">
+        <li>DOM manipulation: jQuery provides powerful tools for traversing and manipulating the HTML Document Object Model (DOM).</li>
+        <li>Event handling: With jQuery, you can easily bind and handle events, such as clicks, keypresses, and mouse movements.</li>
+        <li>Animation: jQuery simplifies the process of creating animations and adding visual effects to elements on your web page.</li>
+        <li>AJAX support: It includes built-in functions to facilitate asynchronous communication with a server, allowing you to load content dynamically.</li>
+        <li>Utilities: jQuery offers a collection of utility functions that simplify common tasks, such as data manipulation, form validation, and AJAX requests.</li>
+    </ul>
+
+</p>
+<!-- <input type="text" id = "name" placeholder = "Enter your name"> -->
+<button id = "btn1">SIGN UP</button>
+<button id = "btn2">lOG IN</button>
+        </div>
+        <div id = "newDiv">
+            </div>
+
+
+<script>
+        
+$ (document).ready(function()
+    {
+      $('p.para1').css({color : 'white', background : '#520000', padding : '20px'})
+      $('p.para2').addClass('myClass');
+    
+      $('#btn1').click(function(){
+        $('li').toggleClass('myClass');
+      })
+    $('#newDiv').html('<h3>Follow for more</h3>');
+    $('#newDiv').append(link = '<a href = "https://tazmeenafroz.wordpress.com/"><h3>Website</h3></a>');
+    $('ul').append('<li>End</li>');
+    $('ul').prepend('<li>Start</li>');
+    $('ul').before('<h3>Before</h3>');
+    $('ul').after('<h3>After</h3>');
+    // $('ul').empty();
+//    $('ul').detach();
+   $('a').attr('target','_blank');
+//    $('p').wrap('<h1>');
+    // $('#name').keyup(function(e){
+    //     var name = e.which;
+    //     if(name == 13){
+    //         e.preventDefault();
+    //         $('ul').append('<li>'+e.target.value+'</li>');
+    //     }
+    // });
+    var myArr = ['Tazmeen','Afroz','Tazmeen Afroz'];
+    $.each(myArr,function(i,val){
+        $('#newDiv').append('<li>'+val+'</li>');
+    });
+    
+
+
+    }
+);
+      
+   </script>
+
+
+   
+    </body>
+
+</html>
